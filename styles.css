@@ -189,6 +189,22 @@ main{
   background-color: var(--just-white);
 }
 
+.bitcoin{
+  width: 30px;
+}
+
+.ethereum{
+  width: 30px;
+}
+
+.ripple{
+  width: 30px;
+}
+
+.stellar{
+  width: 30px;
+}
+
 /* La etiqueta tabla solo funciona como contenedor asi que los estilos visuales que se le apliquen no se veran debido a que la etiqueta tabla no se muestra como tal, por eso hay que modificar son los td internos  */
 .currency-table--container .table__top-left{
   border-radius: 15px 0 0 0;
