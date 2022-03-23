@@ -9,7 +9,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./styles.css">
-  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 930px)">
+  <link rel="stylesheet" href="./css/tablet.css" media="(min-width: 650px)">
+  <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 930px)">
 </head>
 <body>
   <header>
@@ -17,7 +18,7 @@
     <div class="header--title-container">
       <h1>La próxima revolución en el intercambio de criptomonedas</h1>
       <p>Batatabit ayuda a navegar entro los diferentes precios y tendencias.</p>
-      <a class="header--button" href="#plans">Conoce nuestros planes <span>i</span></a>
+      <a class="header--button" href="#plans">Conoce nuestros planes <span></span></a>
     </div>
   </header>
   <main>
@@ -30,55 +31,136 @@
         </p>
       </div>
       <section class="main-tables-container">
-        <div class="main-currency-table">
-          <h3 class="currency-table--title">Monedas</h3>
-          <div class="currency-table--container">
-            <table>
-              <tr>
-                <td class="table__top-left"><span><img class="bitcoin" src="./assets/icons/bitcoin.png"/></span>Bitcoin</td>
-                <td class="table__top-right table__right">$ 1.96 <span class="down"></span></td>
-              </tr>
-              <tr>
-                <td><span><img class="ethereum" src="./assets/icons/ethereum.png" alt="ethereum-logo"/></span>Ethereum</td>
-                <td class="table__right">$ 0.07 <span class="up"></span></td>
-              </tr>
-              <tr>
-                <td><span><img class="ripple" src="./assets/icons/ripple.png" alt="ripple-log"/></span>Ripple</td>
-                <td class="table__right">$ 2.15 <span class="down"></span></td>
-              </tr>
-              <tr>
-                <td class="table__bottom-left"><span><img class="stellar" src="./assets/icons/stellar.png"/></span>Stellar</td>
-                <td class="table__bottom-right table__right">$ 4.96 <span class="down"></span></td>
-              </tr>
-            </table>
+        <div class="tables-container">
+          <div class="main-currency-table">
+            <h3 class="currency-table--title">Monedas</h3>
+            <div class="currency-table--container">
+              <div class="table">
+                <div class="table__top-left">
+                  <p>
+                    <span>
+                      <img class="bitcoin" src="./assets/icons/bitcoin.png"/>
+                    </span>
+                    Bitcoin
+                  </p>
+                </div>
+                <div class="table__top-right table__right">
+                  <p>
+                    $ 1.96
+                    <span class="down"></span>
+                  </p>
+                </div>
+  
+                <div>
+                  <p>
+                    <span>
+                      <img class="ethereum" src="./assets/icons/ethereum.png" alt="ethereum-logo"/>
+                    </span>
+                    Ethereum
+                  </p>
+                </div>
+                <div class="table__right">
+                  <p>
+                    $ 0.07
+                    <span class="up"></span>
+                  </p>
+                </div>
+  
+                <div>
+                  <p>
+                    <span>
+                      <img class="ripple" src="./assets/icons/ripple.png" alt="ripple-log"/>
+                    </span>
+                      Ripple
+                    </p>
+                  </div>
+                <div class="table__right">
+                  <p>
+                    $ 2.15
+                    <span class="down"></span>
+                  </p>
+                </div>
+  
+                <div class="table__bottom-left">
+                  <p>
+                    <span>
+                      <img class="stellar" src="./assets/icons/stellar.png"/>
+                    </span>
+                    Stellar
+                  </p>
+                </div>
+                <div class="table__bottom-right table__right">
+                  <p>
+                    $ 4.96
+                    <span class="down"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="currency-table--date">
+              <p><b>Actualizado:</b> 19 Julio 23:45</p>
+            </div>
           </div>
-          <div class="currency-table--date">
-            <p><b>Actualizado:</b> 19 Julio 23:45</p>
+
+          <div class="table-arrow-container">
+            <span class="right"></span>
           </div>
-        </div>
-        <div class="main-exchange-table">
-          <h3 class="exchange-table--title">Comisiones</h3>
-          <div class="exchange-table--container">
-            <table>
-              <tr>
-                <td class="table__top-left">Bitrade</td>
-                <td class="table__top-right table__right">$ 12.96</td>
-              </tr>
-              <tr>
-                <td>Bitpreco</td>
-                <td class="table__right">$ 13.07</td>
-              </tr>
-              <tr>
-                <td>Novadax</td>
-                <td class="table__right">$ 13.15</td>
-              </tr>
-              <tr>
-                <td class="table__bottom-left">Coinext</td>
-                <td class="table__bottom-right table__right">$ 14.96</td>
-              </tr>
-            </table>
-            <div class="exchange-table--date">
-              <p><b>Actualizado:</b> 19 Julio 23:48</p>
+
+          <div class="table-arrow-container">
+            <span class="left"></span>
+          </div>
+
+          <div class="main-exchange-table">
+            <h3 class="exchange-table--title">Comisiones</h3>
+            <div class="exchange-table--container">
+              <div class="table">
+                <div class="table__top-left">
+                  <p>
+                    Bitrade
+                  </p>
+                </div>
+                <div class="table__top-right table__right">
+                  <p>
+                    $ 12.96
+                  </p>
+                </div>
+  
+                <div>
+                  <p>
+                    Bitpreco
+                  </p>
+                </div>
+                <div class="table__right">
+                  <p>
+                    $ 13.07
+                  </p>
+                </div>
+  
+                <div>
+                  <p>
+                    Novadax
+                  </p>
+                </div>
+                <div class="table__right">
+                  <p>
+                    $ 13.15
+                  </p>
+                </div>
+  
+                <div class="table__bottom-left">
+                  <p>
+                  Coinext
+                  </p>
+                </div>
+                <div class="table__bottom-right table__right">
+                  <p>
+                    $ 14.96
+                  </p>
+                </div>
+              </div>
+              <div class="exchange-table--date">
+                <p><b>Actualizado:</b> 19 Julio 23:48</p>
+              </div>
             </div>
           </div>
         </div>
@@ -172,5 +254,6 @@
       <img src="./assets/images/footer-logo.svg" alt=""/>
     </section>
   </footer>
+
 </body>
 </html>

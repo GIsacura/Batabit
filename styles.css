@@ -96,10 +96,13 @@ header img {
 
 .header--button span {
   display: inline-block;
-  width: 13px;
-  height: 8px;
+  width: 20px;
+  height: 13px;
   margin-left: 10px;
   background-image: url('./assets/icons/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 main{
@@ -150,12 +153,26 @@ main{
   color: #757575;
 }
 
+.main-tables-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tables-container{
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  padding: 0 40px;
+}
+
 .main-currency-table{
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
+  margin-right: 50px;
   font-family: "Inter", sans-serif;
 }
 
@@ -175,34 +192,44 @@ main{
   margin: 0 auto;
 }
 
-.currency-table--container table {
+.currency-table--container .table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100%;
 }
 
-.currency-table--container td{
-  width: 50%;
+.currency-table--container .table div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  background-color: var(--just-white);
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
+}
+
+.currency-table--container .table div p{
   color: var(--grey);
-  background-color: var(--just-white);
+  margin-bottom: 0;
 }
 
 .bitcoin{
-  width: 30px;
+  width: 20px;
 }
 
 .ethereum{
-  width: 30px;
+  width: 20px;
 }
 
 .ripple{
-  width: 30px;
+  width: 20px;
 }
 
 .stellar{
-  width: 30px;
+  width: 20px;
 }
 
 /* La etiqueta tabla solo funciona como contenedor asi que los estilos visuales que se le apliquen no se veran debido a que la etiqueta tabla no se muestra como tal, por eso hay que modificar son los td internos  */
@@ -267,6 +294,35 @@ main{
   font-weight: normal;
 }
 
+/* Lo oculto por el momento hasta resolver el como hacer el scroll con js */
+.table-arrow-container{
+  display: none;
+}
+
+.main-tables-container .right{
+  margin-left: 5px;
+  margin-right: 15px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('./assets/icons/arrow-right.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.main-tables-container .left{
+  margin-right: 5px;
+  margin-left: 15px;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url('./assets/icons/arrow-left.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .main-exchange-table{
   width: 70%;
   min-width: 235px;
@@ -292,18 +348,28 @@ main{
   margin: 0 auto;
 }
 
-.exchange-table--container table {
+.exchange-table--container .table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   height: 100%;
 }
 
-.exchange-table--container td{
-  width: 50%;
+.exchange-table--container .table div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.9rem;
   color: var(--grey);
   background-color: var(--just-white);
+}
+
+.exchange-table--container .table div p {
+  height: auto;
+  margin-bottom: 0;
 }
 
 .exchange-table--container .table__top-left{
@@ -517,6 +583,7 @@ main{
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
+  padding: 0 20px;
 }
 
 .plans-container--card{
