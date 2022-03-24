@@ -1,3 +1,7 @@
+.tables-container{
+  overflow: hidden;
+}
+
 .main-tables-container .right{
   display: none;
 }
